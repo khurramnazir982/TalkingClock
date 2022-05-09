@@ -3,29 +3,41 @@
 //Solution 1: Command Line Solution
 Go to CommandLineSolution folder and Download the DateToDay.java file.
 ## Running the DateToDay.java file will allow you to execute the programme using the command line
+
  javac DateToDay.java
+ 
  //This runs the compiler and creates a DateToDay.class, if not present, for us.
  //Now we can run our code in this class using:
+ 
  java DateToDay 
+ 
  //This returns the default time in english.
 
  You can also test with Strings using the command below: (Remember to always run the compiler on line 6 first.)
+ 
  java DateToDay 12:30
+ 
  //This returns the time string you entered in english.
  //Half past twelve
  
 //Solution 2: Rest API Solution
 Go to the RestAPISolution folder and download the dateToDay-0.0.1-SNAPSHOT.jar file.
 ## To run the jar file directly, use the command below.
+
 java -jar dateToDay-0.0.1-SNAPSHOT.jar
+
 //This prints the default time on the screen and also creates a rest endpoint for you to hit on your free port.
 
 ## To run the rest api use the following url or the port that you are running your application on.
+
 http://localhost:8080/humanclock
+
 //This returns the default time in english.
 
 ## To include a time parameter to check the time in english, use:
+
 http://localhost:8080/humanclock?time=12:45
+
 //This returns -> {"humanClockTime":"Quarter to one"} in JSON.
 //You can change the time however you like to test different outputs.
 
